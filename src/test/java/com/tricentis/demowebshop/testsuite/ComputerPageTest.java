@@ -1,5 +1,6 @@
 package com.tricentis.demowebshop.testsuite;
 
+import com.tricentis.demowebshop.customlisteners.CustomListeners;
 import com.tricentis.demowebshop.pages.BuildYourOwnComputerPage;
 import com.tricentis.demowebshop.pages.ComputerPage;
 import com.tricentis.demowebshop.pages.DesktopsPage;
@@ -7,9 +8,12 @@ import com.tricentis.demowebshop.pages.HomePage;
 import com.tricentis.demowebshop.testbase.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import resources.testdata.TestData;
 
+
+@Listeners(CustomListeners.class)
 public class ComputerPageTest extends BaseTest {
 
     HomePage homePage;

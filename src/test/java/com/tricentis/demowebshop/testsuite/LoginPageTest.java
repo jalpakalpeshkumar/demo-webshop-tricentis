@@ -1,12 +1,16 @@
 package com.tricentis.demowebshop.testsuite;
 
+import com.tricentis.demowebshop.customlisteners.CustomListeners;
 import com.tricentis.demowebshop.pages.HomePage;
 import com.tricentis.demowebshop.pages.LoginPage;
 import com.tricentis.demowebshop.testbase.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners(CustomListeners.class)
 public class LoginPageTest extends BaseTest {
 
     HomePage homePage;
